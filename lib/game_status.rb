@@ -43,7 +43,7 @@ def full?(board)
 end
 
 
-def draw? (board)
+def draw?(board)
   # returns true if board not won but full
   # returns false if board is not won and not full
   # reutrns false if board is won
