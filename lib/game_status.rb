@@ -15,13 +15,6 @@ WIN_COMBINATIONS = [
   [2,4,6]  # Left to Right diagonal
    ]
 
-# #won? method. should accept board as an agument.
-# returns false/nil if there is no winning combo and return winning array
-# does not return who won, only how (the index #s)
-# iterate the possible win combos to check if the boad has same player toke in
-#      each index of a winning combo
-
-
 def won?(board)
 #  for each win_combination in WIN_COMBINATIONS
  WIN_COMBINATIONS.find do |win_combination|
@@ -40,9 +33,7 @@ def won?(board)
       else
         false
       end
-
   end
-
 end
 
 
@@ -57,6 +48,5 @@ def draw? (board)
   # returns false if board is not won and not full
   # reutrns false if board is won
   if won?(board) == false && full?(board) == true
-    true
   end
 end
