@@ -35,3 +35,7 @@ WIN_COMBINATIONS = [
 # does not return who won, only how (the index #s)
 # iterate the possible win combos to check if the boad has same player toke in
 #      each index of a winning combo
+
+def won? (board)
+
+end
