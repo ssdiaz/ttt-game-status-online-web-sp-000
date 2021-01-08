@@ -44,3 +44,10 @@ def won?(board)
   end
 
 end
+
+
+# Full method
+# accept a board and return true if every element in the board contains either x or o
+def full?(board)
+  board = ["X","X","X","X","X","X","X","X","X",]
+end
