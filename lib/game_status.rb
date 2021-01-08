@@ -49,3 +49,9 @@ def draw?(board)
   # reutrns false if board is won
   !won?(board) && full?(board)
   end
+
+# over
+# true if won, draw, or full
+def over?(board)
+  won?(board) || draw?(board) || full?(board)
+end
