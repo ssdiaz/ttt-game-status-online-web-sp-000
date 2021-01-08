@@ -56,12 +56,13 @@ WIN_COMBINATIONS.each do |win_combination|
     position_1 = board[win_index_1] # load the value of the board at win_index_1
     position_2 = board[win_index_2] # load the value of the board at win_index_2
     position_3 = board[win_index_3] # load the value of the board at win_index_3
-    position_4 = board[win_index_4] # load the value of the board at win_index_1
-    position_5 = board[win_index_5] # load the value of the board at win_index_2
-    position_6 = board[win_index_6] # load the value of the board at win_index_3
-    position_7 = board[win_index_7] # load the value of the board at win_index_1
-    position_8 = board[win_index_8] # load the value of the board at win_index_2
-    position_9 = board[win_index_9] # load the value of the board at win_index_3
+    
+    # position_4 = board[win_index_4] # load the value of the board at win_index_1
+    # position_5 = board[win_index_5] # load the value of the board at win_index_2
+    # position_6 = board[win_index_6] # load the value of the board at win_index_3
+    # position_7 = board[win_index_7] # load the value of the board at win_index_1
+    # position_8 = board[win_index_8] # load the value of the board at win_index_2
+    # position_9 = board[win_index_9] # load the value of the board at win_index_3
 
 #
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
