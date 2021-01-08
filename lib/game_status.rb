@@ -37,5 +37,5 @@ WIN_COMBINATIONS = [
 #      each index of a winning combo
 
 def won? (board)
-  board.select {|i| i.any?}
+  board.select {|board| board == WIN_COMBINATIONS.any?}
 end
