@@ -40,7 +40,6 @@ def won?(board)
       return win_combination # return the win_combination indexes that won.
     else
       false
-      puts board
     end
   end
 
