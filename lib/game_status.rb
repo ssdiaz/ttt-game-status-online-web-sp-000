@@ -47,8 +47,8 @@ end
 
 
 # Full method
-# accept a board and return true if every element in the board contains either x or o
 def full?(board)
+  # accept a board and return true if every element in the board contains either x or o
   board.all? {|index| index == "X" || index == "O"}
 end
 
