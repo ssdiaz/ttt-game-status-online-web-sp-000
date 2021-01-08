@@ -46,14 +46,12 @@ def won?(board)
 end
 
 
-# Full method
 def full?(board)
   # accept a board and return true if every element in the board contains either x or o
   board.all? {|index| index == "X" || index == "O"}
 end
 
 
-# #draw? method; accets board as argument
 def draw? (board)
   # returns true if board not won but full
   # returns false if board is not won and not full
