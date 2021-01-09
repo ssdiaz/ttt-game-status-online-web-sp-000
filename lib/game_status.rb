@@ -58,6 +58,8 @@ def winner(board)
   if won?(board)
 # find winning index inside of board and display it
 
+won?(board)[0]
+
   puts board[won?(board)]
 
 #    if position_1 == "X"
