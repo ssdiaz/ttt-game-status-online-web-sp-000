@@ -58,6 +58,6 @@ def winner?(board)
   #puts won?(board).find {|win_combination| win_combination == "X" || win_combination == "O"}
 if won?(board)
   won?(board).find {|win_combination| win_combination == "X"}
-
+end
 
 end
