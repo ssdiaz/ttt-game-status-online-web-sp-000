@@ -57,8 +57,8 @@ def winner(board)
 # returns the token that won
   if won?(board)
 # find winning index inside of board and display it
-    winner_index_1 = [0]
-    position_1 = board[winner_index_1] # load the value of the board at win_index_1
+
+    position_1 = board[won?(board)] # load the value of the board at win_index_1
 
     if position_1 == "X"
         "X"
