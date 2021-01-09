@@ -36,12 +36,10 @@ def won?(board)
   end
 end
 
-
 def full?(board)
   # accept a board and return true if every element in the board contains either x or o
   board.all? {|index| index == "X" || index == "O"}
 end
-
 
 def draw?(board)
   # returns true if board not won but full
@@ -50,8 +48,12 @@ def draw?(board)
   !won?(board) && full?(board)
   end
 
-# over
-# true if won, draw, or full
 def over?(board)
+# true if won, draw, or full
   won?(board) || draw?(board) || full?(board)
+end
+
+def winner?(board)
+# returns the token that won
+  won?(board)
 end
