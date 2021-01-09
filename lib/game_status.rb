@@ -57,13 +57,9 @@ def winner(board)
 # returns the token that won
   if won?(board)
 # find winning index inside of board and display it
-    win_index_1 = win_combo[0]
-    win_index_2 = win_combo[1]
-    win_index_3 = win_combo[2]
+    winner_index_1 = win_combo[0]
 
     position_1 = board[win_index_1] # load the value of the board at win_index_1
-    position_2 = board[win_index_2] # load the value of the board at win_index_2
-    position_3 = board[win_index_3] # load the value of the board at win_index_3
 
     if position_1 == "X"
         "X"
