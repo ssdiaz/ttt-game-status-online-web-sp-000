@@ -55,8 +55,7 @@ end
 
 def winner(board)
 # returns the token that won
-  #if won?(board)
-# find winning index inside of board and display it
-   board[won?(board)[0]]
-    #end
+  if won?(board)
+   board[won?(board)[0]] # find winning index inside of board and display it
+  end
 end
