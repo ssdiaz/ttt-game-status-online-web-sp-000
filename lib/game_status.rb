@@ -55,12 +55,23 @@ end
 
 def winner(board)
 # returns the token that won
-if won?(board)
-board = won?(board)
-board[0][0]
-end
-  #if won?(board)
-  #  won?(board).find {|win_combination| win_combination == "X" || win_combination == "O"}
-  #end
+  if won?(board)
+# find winning index inside of board and display it
+    win_index_1 = win_combination[0]
+    win_index_2 = win_combination[1]
+    win_index_3 = win_combination[2]
 
+    position_1 = board[win_index_1] # load the value of the board at win_index_1
+    position_2 = board[win_index_2] # load the value of the board at win_index_2
+    position_3 = board[win_index_3] # load the value of the board at win_index_3
+
+    if position_1 == "X"
+        "X"
+      elsif position_1 == "O"
+        "O"
+      else
+        false
+      end
+
+  end
 end
