@@ -16,8 +16,7 @@ WIN_COMBINATIONS = [
    ]
 
 def won?(board)
-#  for each win_combination in WIN_COMBINATIONS
- WIN_COMBINATIONS.find do |win_combination|
+ WIN_COMBINATIONS.find do |win_combination| #  for each win_combination in WIN_COMBINATIONS
     # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
     # grab each index from the win_combination that composes a win.
     win_index_1 = win_combination[0]
@@ -36,26 +35,20 @@ def won?(board)
   end
 end
 
-def full?(board)
-  # accept a board and return true if every element in the board contains either x or o
+def full?(board) # accept a board and return true if every element in the board contains either x or o
   board.all? {|index| index == "X" || index == "O"}
 end
 
-def draw?(board)
-  # returns true if board not won but full
-  # returns false if board is not won and not full
-  # reutrns false if board is won
+def draw?(board)   # returns true if board not won but full
   !won?(board) && full?(board)
   end
 
-def over?(board)
-# true if won, draw, or full
+def over?(board) # true if won, draw, or full
   won?(board) || draw?(board) || full?(board)
 end
 
-def winner(board)
-# returns the token that won
+def winner(board) # returns the token that won
   if won?(board)
-   board[won?(board)[0]] # find index inside of board and display it
+   board[won?(board)[0]] # find first index of winning board and display it from board
   end
 end
