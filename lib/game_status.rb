@@ -55,5 +55,5 @@ end
 
 def winner?(board)
 # returns the token that won
-  won?(board).find {|index| index == "X" || index == "O"}
+  won?(board).find {|index| (index == "X" || index == "O")}
 end
