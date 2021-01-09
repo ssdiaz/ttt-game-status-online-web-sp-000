@@ -55,7 +55,8 @@ end
 
 def winner(board)
 # returns the token that won
-   won?(board[0])
+  winning_player = won?(board)
+  winning_player[0]
   #if won?(board)
   #  won?(board).find {|win_combination| win_combination == "X" || win_combination == "O"}
   #end
