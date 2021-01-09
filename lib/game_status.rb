@@ -65,11 +65,11 @@ def winner(board)
 
 
 #    if position_1 == "X"
-        "X"
-      elsif position_1 == "O"
-        "O"
-      else
-        false
-      end
+#        "X"
+#      elsif position_1 == "O"
+##        "O"
+  #    else
+  #      false
+  #    end
     end
 end
