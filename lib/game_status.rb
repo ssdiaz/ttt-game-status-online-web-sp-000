@@ -58,15 +58,18 @@ def winner(board)
   if won?(board)
 # find winning index inside of board and display it
 
-    position_1 = board[won?(board)] # load the value of the board at win_index_1
 
-    if position_1 == "X"
+  board(won?(board))
+
+
+
+
+#    if position_1 == "X"
         "X"
       elsif position_1 == "O"
         "O"
       else
         false
       end
-
-  end
+    end
 end
