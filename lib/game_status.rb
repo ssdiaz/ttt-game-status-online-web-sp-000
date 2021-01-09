@@ -58,7 +58,6 @@ def winner(board)
   if won?(board)
 # find winning index inside of board and display it
     winner_index_1 = win_combo[0]
-
     position_1 = board[winner_index_1] # load the value of the board at win_index_1
 
     if position_1 == "X"
