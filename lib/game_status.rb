@@ -55,17 +55,8 @@ end
 
 def winner(board)
 # returns the token that won
-  if won?(board)
+  #if won?(board)
 # find winning index inside of board and display it
    board[won?(board)[0]]
-
-#    if position_1 == "X"
-#        "X"
-#      elsif position_1 == "O"
-##        "O"
-  #    else
-  #      false
-  #    end
-    end
+    #end
 end
-board = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
